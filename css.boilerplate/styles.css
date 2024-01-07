@@ -1,0 +1,88 @@
+/* Einführung in css, mit schriften aus der ersten erklärung.Css ist grundsetzlich dafür da deine webseite optisch anzupassen*/
+
+-------------------------------------
+
+
+div.bold-text {                             /*    div.bolt-text <-- selector ist ein Html element auf das die angegebene regel zu trifft. */
+    font-weight: 700;                         /* font-weight <-- property, 700 <--Value, ; <-- sperator, die drei sind zusamen eine erklärung/angabe wie es etwas zu sein hat, alles was zwischen {} steht mit denn klammern selbst nennt man einen Decleration blog */
+}
+<div>  /*Ein basic html tag, es erstellt ein element das als cointer dient um andere elemente dadrin zu sammeln*/
+
+--------------------------------------
+
+
+/* Selector types*/
+
+* {
+    color: purple; /* der selector * ist hier universal und nimmt elemente aller typen, jedes element hier im html code hätte jetzt die farbe lila*/
+}
+
+p {
+    color:white; /*in dem fall ist der plain name des Elementes das wir ansprechen wolln ein Type selector und spricht alle elemente <p> an*/
+}
+
+.Einführung {
+    color:red;      /* .alert-text ist ein Class selector, er spricht die elemnte an die des Atribut des jeweiligen klasse haben, z.b. <p class="Einführung"> würde dadurch angesprochen wären und alles andere was in der selben klasse ist.
+                         Mit einem klassen atribut kann man einem element auch mehrere klassen zuweisen, class="Einführung Ausführung" hier haben wir die klassen Einführung und ausführung die auch getrennt von einander benutzt werden können */
+}
+
+#Einführung {
+    color:red;     /* #* ist ein id selector, id ist identisch mit klassen mit der ausnahme das eine id nur einmal auf einer seite vor kommen sollte und auch nur eine id an jedes elemnt vergeben werden kann*/
+}
+
+.read,
+.unread {
+    color:white;
+    background-color: black;    /* wenn man mehre groupen hat die dennen man die Selben style werte zu fügen möchte kann man den grouping selector verwenden, die klassen über einander schreibung un am ende der klasse mit einerm komma benden.*/
+}
+
+.read.unread {
+    color:red;  /*chaning selector, wir benutzen zwei klassen und es werden nur die Elemente ausgewählt die beide Klassen besitzen, wenn mein elemnt nur <p class="unread"> ist dann wird es nicht beeinflußt.*/
+}
+
+.read#unread {
+    color:red;  /*auch möglich mit klasse und id*/
+}
+
+.ancestor .contents {             /*Das ist der erste von vier combinatoren, das hier heit der Descendant combinator da er so funktioniert das er nur die kinder mit der letzten klasse anspricht dessen eltern oder "fohrfahren" die erste klasse besaßen, wenn ich eine <ol class="ancestor"> erstelle und in dem ein <li class="contens"> einsiedle dann wir der von der regel angesprochen, die selben commands die keiner der beidem kriterien erfüllen werden nicht angesprochen, das kannst du weiter ziehen so viel du willst, .one.three.four.five.seven, dann wird nur das elemnt mit der klasse seven angesprochen dessen parent five hatte und dessen four usw */
+    background:fixed;
+}
+
+---------------------------------
+
+
+/* Basic properties*/
+
+color /* gibt die text farbe des elementes das as man mit dem selector ansprechen möchte */
+backround-color /*  gibt die Hintergrund Farbe eines elementes an*/
+                   /* beide akzeptieren keywörter wie ,Red,Black,Yellow,White, sonst auch nehmen sie beide HEX, RGB und HSL werte an die dann denn genauen Ton anzeigen können */
+
+----------------------------------
+
+
+/* Text-font und texte auf die selbe ebende zu bringen */
+
+font-family /* kann ein einziger wert sein oder mit einem kommer sperierte werte die angeben welches font benutzt wird */
+
+font-size  /*Gibt die Größe des Fonts an z.b. 20px wären hier 20pixel groß */
+
+font-weight  /* Lässt uns die dicke Eines fonts angeben, entweder "bold" oder ein wert von normalerweise von 1 - 1000 in 100 schriten */
+
+text-align  /* alignt den text horizontal innerhalb eines elementes, als value kann man wörter wie center benutzen */
+
+img {
+    height:auto;
+    width:500px;             /* Normal ist ein Bild so groß wie seine originale pixel anzahl, hight stellt noch einmal seperat die höhe ein und width die breit, beides wird in pixel angegebn oder kann auf auto gestellt werden das sich wert a wert b anpasst */
+}
+
+--------------------------------
+
+
+/* Css mit Html verbinden */
+
+/* Die üblichste art css mit html zu verbinden ist die Externe methode, mann erstellt ein eigenes styles.css dokument und Linkt es im Head element des Html dokumentes mit dem tag <link rel="stylesheet" href="styless.css"> das rel="stylessheet" gibt die beziehung zwischen beiden an, was das stylessheet für das html dokument ist */
+
+<styles> </styles   /* ist die interne css methode, hier erstellen wir im Head element des html dokumentes ein Style elemnt in die unsere Deklerations blöcke rein geschrieben werden */
+
+inline method  /* Wir schreiben die Style anzweisungen direkt in den Tag des elementes das beeinflußt werden soll, hier benutzen wir keinen selector das der tag angesprochen wird, sonst werden auch keine {} benutzt. ähnlich wie bei der internen method fügen wir hier zum tag den atribute style="***" hinzu und geben als wert unsere Declerations an. */
+s
