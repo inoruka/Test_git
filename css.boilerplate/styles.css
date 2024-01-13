@@ -85,4 +85,15 @@ img {
 <styles> </styles   /* ist die interne css methode, hier erstellen wir im Head element des html dokumentes ein Style elemnt in die unsere Deklerations blöcke rein geschrieben werden */
 
 inline method  /* Wir schreiben die Style anzweisungen direkt in den Tag des elementes das beeinflußt werden soll, hier benutzen wir keinen selector das der tag angesprochen wird, sonst werden auch keine {} benutzt. ähnlich wie bei der internen method fügen wir hier zum tag den atribute style="***" hinzu und geben als wert unsere Declerations an. */
-s
+
+------------------------------
+
+display: block   /* ercheinen auf der seite über einander, jedes block element nimmt eine neues  zeile ein, beispiel <p> */
+
+display: inline /* erscheint mit dem kontent neben ihm auf der selben seite und erzeugt keinen neuen zeilen umbruck, beispiel <a> */
+
+display: inline-block /* benehmen sich wie inline elemente aber besitzen das padding und die margin wie ein block elememt */
+
+<Div> /* block element von natur wird dafür benutz andere elemente in einer gruppe zu verbinden. damit können wir unsere seite in wortwörtlich verschidene blöcke auf teilen */
+
+<span> /* ist ähnlich wie eine Div mit dem unterschied das es inline ist und benutz wird für text content und inline elemente, */

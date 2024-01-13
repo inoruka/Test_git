@@ -4,18 +4,41 @@
 <head>             <!--Start des Head elements, Beschreibung der seite sowie der Titel aber nicht was auf der mein page angezeigt wird--->
     <meta charset="utf-8">    <!--Gibt an welches set von charakteren benuutzt wird um sie anzeigen zu lassen.-->
     <title>My First page</title>   <!--Titel, wir im Browser für die aktuelle seite angezeigt.-->
+    <link href="styles.css" rel="stylesheet"> <!--verlinkt das css dokument Styles und gibt die relation zwischen den beiden als stylesheet an. muss immer im head segment sigment sein.-->
 </head>     <!--Head part zu ende-->
  <body>      <!--Start boddy element, dies wird dem Verbraucher nun angezeigt.-->  
+    <main>   <!-- Startet den Hauptteil der website-->
+        <div>
+            <!--erstellt einfach sowas wie einen ordner dem du ne id und namen geben kannst, kannst du alles rein legen und damit ansprechen, auch gennant container.-->
+        </div>
+        <article>
+           <!-- ein eigenständiger bereich der in sich selbst sinn macht und nicht mit irgendwemm anderes verbunden werden muss kann auch als unter directory benutz werden -->
+
+        </article>
     <h1> Hallo World</h1>  <!--<h1> =heading/überschrift, in dem fall 1-->
     <p>lorem</p>    <!--Paragraphen funktion, Lässt uns einen test anzeigen mit einem direkten Zeilnumbruch dadrunter-->
     <p>Dieses Wort ist <strong>Strong</strong> und <em>dieses</em> wort ist   
     emphasized</p>   <!--paragraf mit eingebautem <Strong> element (das Das eingeklammerte wort stark darstelt) und eingebautem <em> element (Das zeigt den eingeklammerten Text etwas geschwungen)--> 
     </p>  
+    <section>    <!-- beginnt eine section der website die selbst definir bar ist, zbs sektiion unordet list maja-->
+        <figure>   <!-- Figure wird benutz um eine section extra für grafiken und ihren kontent zu erschaffen, am besten vergleich bar mir dem <div> nur für Grafiken-->
+            <img src="funny_cat.jpeg" alt="Süße graue katze vor blauem digitalen hintergrund">    <!-- img für image ist ein tag der benutz wird um bilder mit dem atribute src zu verlinken und anzu zeigen, alt=" " ist der Text der angegeben wird falls das bild nicht geladen werden kann.-->
+            <figcaption> Sehen sie <em>diese</em> <strong>Süße </strong>Katze?</figcaption>   <!-- eine Art unterschrift für die figur dir direkt an der Graphik drunter plaziert ist, <em> zeigt den content geschwungen an, <strong> betonnt ein wort bzw den content---> 
+            </figure>              <!-- Beendet figure für grafiken-->
+            <form action="">  <!--form gibt an der Start eines bereiches der mit dem user interactiv ist zbs buttons, der action atribute schickt dann die interaktion an den verlinkten server wo er dann verarbeitet werden sol..-->
+                <fieldset>  <!--Wird benutz um mehrere optionen innerhalb einer form zu grupieren -->
+              <legend>Überschrift </legend>    <!-- Die überschrift für den kommenden interactiven beriecht -->
+              <label><input id= "ja" type="radio" name="indor-outdoor" value="indoor" cheked></label>  <!--Label, labelt den knopf, im grund schreibt man eine schrift mit label und die interactive funkition wird hinzugefügt durch  input die  erstelt einen einen interactiven bereich der mit Type= als radio button definiert wurde, name ist der angezeige name des "knopfes" und id die id womit sie sich später in css ansprechen lässt und der comouter die daten annimt, value ist die date die über bracht werden muss, in dem fall würde man diesen button auswehlen würde der computer die information bekommen das Ja mit dem wert outdoor gewählt wurde--->
+               </fieldset> <!--beendet den graphischen kontent abschnitt-->
+               <input type="text" name="ist maja die beste?" placeholder="ist maja die beste?" required> <!--erstellt einen input der text als antwort ent gegen nimmt, der name des inputes ist ist maja die beste und als verdeutlichung das da eine schriftliche antwort hin kommt ist die frage als placeholder noch einmal rein geschrieben, Required gibt an das das feld ausgefüllt sein muss bevor es abgegeben werden kann-->
+               <button type="submit">Submit</button>   <!-- erstellt einen knopf der die funktion hat abzu geben, auf dem knopf wird Submit angezeit-->
+            </form>          <!--beendet den interactiven bereich-->
 <ul>                <!-- Start, ungeordnete liste element-->
     <li>Maja</li>      <!--Listen item Element-->
     <li>Maja</li> 
      <li>Maja</li>
 </ul>                      <!-- ungeordnete liste ende-->
+</section>              <!--Beendet die section der ungeordneten liste maja-->
  <ol>                       <!--Start geordnete liste-->
      <li>Maja</li>
      <li>Maja</li>
@@ -23,5 +46,9 @@
  </ol>                      <!--ende geordnete liste-->
     <br>    <!--Horizontaler Seitenumbruch-->
      <hr>    <!--Vertikaler seitenumbruch-->
+     </main> <!-- beendet den Hauptteil der Website-->
+     <footer>  <!--erstellt eine fusszeile die eimmer am ende des abschlusses angezeigt wird-->
+      <a href="www.wikipedia.com">Wikipedia</a>    <!--erstellt eine textliche verlinkung zu wikipedia, klickt man nun auf das blaue word wikipedia in der fusszeile wird man dahin weiter geleitet-->
+     </footer>
 </body>    <!--Schliest das body element des codes ab-->
      </html>   <!--zeigt so zu sagen das ende des Codes an.-->
