@@ -82,7 +82,7 @@ img {
 
 /* Die üblichste art css mit html zu verbinden ist die Externe methode, mann erstellt ein eigenes styles.css dokument und Linkt es im Head element des Html dokumentes mit dem tag <link rel="stylesheet" href="styless.css"> das rel="stylessheet" gibt die beziehung zwischen beiden an, was das stylessheet für das html dokument ist */
 
-<styles> </styles   /* ist die interne css methode, hier erstellen wir im Head element des html dokumentes ein Style elemnt in die unsere Deklerations blöcke rein geschrieben werden */
+<styles> </styles>  /* ist die interne css methode, hier erstellen wir im Head element des html dokumentes ein Style elemnt in die unsere Deklerations blöcke rein geschrieben werden */
 
 inline method  /* Wir schreiben die Style anzweisungen direkt in den Tag des elementes das beeinflußt werden soll, hier benutzen wir keinen selector das der tag angesprochen wird, sonst werden auch keine {} benutzt. ähnlich wie bei der internen method fügen wir hier zum tag den atribute style="***" hinzu und geben als wert unsere Declerations an. */
 
